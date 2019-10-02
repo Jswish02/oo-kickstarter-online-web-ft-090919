@@ -5,6 +5,7 @@ class Baker
      @backed_projects = []
   end
   def backed_projects(project)
-    backed_projects << projects
-    
+    backed_projects << project
+    project.bsckers << self
+  end
 end
