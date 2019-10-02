@@ -1,11 +1,11 @@
 class Baker
-  attr_reader :name, :backed_packed
+  attr_reader :name, :backed_projects
   def initialize(name)
     @name = name
      @backed_projects = []
   end
   def backed_projects(project)
     backed_projects << project
-    project.bsckers << self
+    project.backers << self
   end
 end
